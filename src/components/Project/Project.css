@@ -1,0 +1,39 @@
+.project-info {
+  width: 45%;
+  height: 100%;
+  float: right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 16%;
+  margin-right: 4%;
+}
+
+.project-info img {
+  width: 60%;
+  margin-left: -2vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.header p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.close-modal-btn {
+  background: none;
+  color: #191b1c;
+}
+
+.header a {
+  color: #191b1c;
+}
+.header a:hover {
+  color: #00ffff;
+}
