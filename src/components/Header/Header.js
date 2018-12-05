@@ -2,18 +2,22 @@ import React, { Component } from 'react'
 //import './Header.css';
 
 class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      navOpen: false,
+    }
+  }
+
+  toggleNav = () => {
+    this.setState({ navOpen: !this.state.navOpen })
+  }
   render() {
     let resumeData = this.props.resumeData
     return (
       <React.Fragment>
         <header id="home">
           <nav id="nav-wrap">
-            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-              Show navigation
-            </a>
-            <a className="mobile-btn" href="#" title="Hide navigation">
-              Hide navigation
-            </a>
             <ul id="nav" className="nav">
               <li className="current">
                 <a className="smoothscroll" href="#home">
@@ -38,6 +42,48 @@ class Header extends Component {
                 </a>
               </li>
             </ul>
+          </nav>
+          <nav id="mobile-nav-wrap">
+            {!this.state.navOpen && (
+              <button
+                className="mobile-btn"
+                onClick={() => this.toggleNav()}
+                title="Show navigation"
+              >
+                {/* Show navigation */}
+              </button>
+            )}
+            {this.state.navOpen && (
+              <div className="mobile-nav-open">
+                <i className="hide" onClick={() => this.toggleNav()} title="Hide navigation">
+                  {/* Hide navigation */}
+                </i>
+                <ul id="mobile-nav" className="nav">
+                  <li className="current">
+                    <a className="smoothscroll" href="#home">
+                      Home
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="smoothscroll" href="#resume">
+                      Resume
+                    </a>
+                  </li>
+                  <li>
+                    <a className="smoothscroll" href="#portfolio">
+                      Works
+                    </a>
+                  </li>
+
+                  <li>
+                    <a className="smoothscroll" href="#contact">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            )}
           </nav>
 
           <div className="row banner">

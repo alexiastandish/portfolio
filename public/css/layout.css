@@ -270,7 +270,7 @@ ul#nav li.current a {
   margin: 0;
   padding: 0;
   margin-left: 42px;
-  color: #f06000;
+  color: #00ffff;
 }
 
 #about .social-links li:first-child {
@@ -409,6 +409,10 @@ ul#nav li.current a {
 
 .project-link {
   padding: 10px;
+}
+.project-link img:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .portfolio-item .item-wrap {
@@ -944,4 +948,8 @@ footer .copyright li:first-child:before {
 }
 #go-top a:hover {
   color: #00ffff;
+}
+
+#mobile-nav-wrap {
+  display: none;
 }

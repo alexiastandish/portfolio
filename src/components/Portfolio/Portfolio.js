@@ -30,7 +30,7 @@ class Portfolio extends Component {
       <section id="portfolio">
         <div className="row">
           <div>
-            <h1>Check Out Some of My Works.</h1>
+            <h1>Click on an image to explore the project.</h1>
             <div id="portfolio-wrapper">
               {resumeData.portfolio &&
                 resumeData.portfolio.map((item, index) => {

@@ -28,7 +28,24 @@
 
 .close-modal-btn {
   background: none;
-  color: #191b1c;
+  color: #ffffff;
+  font: 28px/1.9em 'Montserrat', sans-serif;
+  content: '\2715';
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+.close-modal-btn:after {
+  background: none;
+  color: #ffffff;
+  font: 28px/1.9em 'Montserrat', sans-serif;
+  content: '\2715';
+  z-index: 1000;
+}
+
+.close-modal-btn:hover {
+  background: none;
+  color: #00ffff;
 }
 
 .header a {
@@ -36,4 +53,18 @@
 }
 .header a:hover {
   color: #00ffff;
+}
+
+@media only screen and (max-width: 480px) {
+  .project-info {
+    width: 85%;
+    height: 100%;
+    float: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 86%;
+    margin-right: 0%;
+  }
 }

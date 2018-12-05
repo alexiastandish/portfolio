@@ -31,9 +31,7 @@ class Project extends Component {
             className="close-modal-btn"
             style={{ position: 'absolute' }}
             onClick={this.props.closeModal}
-          >
-            <i className="fa fa-2x fa-times" />
-          </button>
+          />
 
           <section className="project-info">
             <div className="header">
