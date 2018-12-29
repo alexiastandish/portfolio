@@ -94,7 +94,8 @@ class Header extends Component {
               <h3 className="header-description">
                 {resumeData.intro}. I am a {resumeData.role}. I enjoy learning new technologies,
                 creative thinking, problem solving, and coding. When I'm not coding, I spend my time
-                boxing, obsessing over my two large doggos, and eating lots of mac and cheese.
+                boxing, obsessing over my two large doggos, and continuing my life-long journey of
+                finding the best mac and cheese known to man.
               </h3>
               <hr />
             </div>

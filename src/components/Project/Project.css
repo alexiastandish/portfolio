@@ -1,34 +1,57 @@
 .project-info {
-  width: 45%;
-  height: 100%;
-  float: right;
   position: relative;
   display: flex;
-  align-items: center;
   text-align: left;
-  margin-top: 16%;
-  margin-right: 4%;
+  padding: 40px;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .project-info img {
-  width: 60%;
+  width: 80%;
   margin-left: -2vw;
 }
 
-.header {
+.left-modal {
   display: flex;
+  width: 40%;
   flex-direction: column;
-  float: right;
 }
 
-.header p {
+.left-modal p {
   font-size: 12px;
   line-height: 16px;
+}
+.right-modal {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.right-modal p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.right-modal a {
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: #121415;
+}
+
+.right-modal a:hover {
+  color: #00ffff;
 }
 
 .close-modal-btn {
   background: none;
-  color: #ffffff;
+  color: #121415;
   font: 28px/1.9em 'Montserrat', sans-serif;
   content: '\2715';
   z-index: 1000;
@@ -37,7 +60,7 @@
 }
 .close-modal-btn:after {
   background: none;
-  color: #ffffff;
+  color: #121415;
   font: 28px/1.9em 'Montserrat', sans-serif;
   content: '\2715';
   z-index: 1000;
@@ -48,23 +71,58 @@
   color: #00ffff;
 }
 
-.header a {
-  color: #191b1c;
-}
-.header a:hover {
-  color: #00ffff;
-}
-
 @media only screen and (max-width: 480px) {
   .project-info {
-    width: 85%;
-    height: 100%;
-    float: none;
     position: relative;
     display: flex;
-    align-items: center;
     text-align: left;
-    margin-top: 86%;
-    margin-right: 0%;
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 50px;
+  }
+
+  .project-info img {
+    width: 100%;
+    margin-left: 0vw;
+  }
+
+  .left-modal {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .left-modal p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .right-modal {
+    width: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .right-modal p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .right-modal a {
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #121415;
+  }
+
+  .right-modal a:hover {
+    color: #00ffff;
   }
 }

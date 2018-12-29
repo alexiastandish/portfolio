@@ -84,11 +84,11 @@ let resumeData = {
       skillLogo: 'https://i.imgur.com/0YoR55n.png',
     },
     {
-      skillname: 'Sockets.io',
+      skillname: 'Socket.io',
       skillLogo: 'https://i.imgur.com/EB2rm07.png',
     },
     {
-      skillname: 'AWS',
+      skillname: 'AWS Cognito and S3',
       skillLogo: 'https://i.imgur.com/ByDFHfc.png',
     },
     {

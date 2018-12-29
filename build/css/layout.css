@@ -213,7 +213,7 @@ ul#nav li.current a {
 }
 
 #about h2 {
-  font: 30px 'Montserrat', sans-serif;
+  font: 22px 'Montserrat', sans-serif;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -751,9 +751,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-  /* background: #191919; */
-  padding-top: 96px;
-  padding-bottom: 102px;
+  padding: 98px 30px 98px 30px;
   color: #a8a8a8;
 }
 #contact .section-head {

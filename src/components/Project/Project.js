@@ -14,40 +14,39 @@ class Project extends Component {
             zIndex: 10,
           },
           content: {
-            width: '80vw',
-            height: '80vh',
-            top: '10vh',
             margin: '0 auto',
             backgroundColor: '#ebeeee',
-            backgroundImage: `url(${this.props.project.item.backgroundImage})`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
             borderRadius: '0px',
+            top: '40px',
+            bottom: '40px',
+            left: '40px',
+            right: '40px',
           },
         }}
       >
-        <div className="modal-style">
-          <button
-            className="close-modal-btn"
-            style={{ position: 'absolute' }}
-            onClick={this.props.closeModal}
-          />
+        <button
+          className="close-modal-btn"
+          style={{ position: 'absolute' }}
+          onClick={this.props.closeModal}
+        />
 
-          <section className="project-info">
-            <div className="header">
-              <img src={this.props.project.item.logo} alt="logo" />
-              Project: <h3>{this.props.project.item.name}</h3>
-              Technologies: <p>{this.props.project.item.techs}</p>
-              <p>{this.props.project.item.description}</p>
-              <a href={this.props.project.item.github} target="_blank" rel="noopener noreferrer">
-                Go to {this.props.project.item.name} Github repo
-              </a>
-              <a href={this.props.project.item.url} target="_blank" rel="noopener noreferrer">
-                Go to {this.props.project.item.name}
-              </a>
-            </div>
-          </section>
-        </div>
+        <section className="project-info">
+          <div className="left-modal">
+            <img src={this.props.project.item.logo} alt="logo" />
+            Project: <h3>{this.props.project.item.name}</h3>
+            Technologies: <p>{this.props.project.item.techs}</p>
+          </div>
+          <div className="right-modal">
+            <p>{this.props.project.item.description}</p>
+            <a href={this.props.project.item.github} target="_blank" rel="noopener noreferrer">
+              Go to {this.props.project.item.name} Github repo
+            </a>
+            <br />
+            <a href={this.props.project.item.url} target="_blank" rel="noopener noreferrer">
+              Go to {this.props.project.item.name}
+            </a>
+          </div>
+        </section>
       </Modal>
     )
   }
